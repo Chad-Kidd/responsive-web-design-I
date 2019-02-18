@@ -65,13 +65,12 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-.test {
-	border: 2px solid red;
-}
+
 
 .container {
 	max-width: 800px;
-	margin: 0 auto;
+    margin: 0 auto;
+    
 }
 
 button {
@@ -86,20 +85,62 @@ button {
 
 .index .banner {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: space-around;
+    align-items: center;
+    /* max-width: 1024px; */
 }
+
+/* BANNER MEDIA-Q */
+@media(max-width: 515px) {
+    .banner {
+      flex-direction: column;
+      /* align-items: center; */
+      /* margin: 0 auto; */
+    }
+  }
 
 .index header .banner nav a {
 	text-decoration: none;
 	font-family: inherit;
 	color: lightgrey;
-	margin-left: 40px;
+    margin-left: 0 auto;
+    padding-bottom: 20px;
+    
 }
 
-.index header .banner nav a:first-child {
-	margin-left: 0;
-}
+/* BANNER NAV MEDIA-Q */
+
+  @media(max-width: 515px) {
+    .index header .banner nav a {
+        display: flex;
+        justify-content: center;
+        align-items: space-between;
+        margin: 0 auto;
+
+    }
+  }
+/* NAV BORDER MEDIA Q */
+  @media(max-width: 515px) {
+    .index header .banner nav a {
+        border: 0.2px solid rgb(133, 129, 129);
+        padding: 10px;
+        width: 600px;
+
+    }
+  }
+
+  @media(max-width: 515px) {
+    .index header .banner .logo {
+        /* display: flex;
+        justify-content: center;
+        align-items: space-between;
+        margin: 0 auto; */
+        padding-top: 20px;
+        /* position: fixed;
+        top: initial; */
+    }
+  }
+
 
 .index header .header-content {
 	display: flex;
@@ -112,12 +153,21 @@ button {
 .index header .header-content .header-item {
 	display: block;
 	width: 45%;
-	text-align: center;
+    text-align: center;
+}
+
+/* IMG HEADER-ITEM MEDIA QUERY */
+
+@media (max-width: 515px) {
+    .index header .header-content .header-item {
+      display: none;
+  }
 }
 
 .index header .header-content .header-item h1 {
 	font-size: 80px;
 }
+
 
 /* style main content section */
 
@@ -134,6 +184,18 @@ button {
 	justify-content: space-between;
 }
 
+/* ABOVE CONTENT MEDIAQ */
+@media (max-width: 515px) {
+    .index .main-content .above-img {
+    flex-direction: column;
+    width: 1000px; 
+    margin: 15px;
+    padding: 0px;
+    
+  }
+}
+
+
 .index .main-content .above-img div {
 	width: 48%;
 }
@@ -149,6 +211,17 @@ button {
 	justify-content: space-between;
 }
 
+/* BELOW CONTENT MEDIAQ */
+@media (max-width: 515px) {
+    .index .main-content .below-img {
+    flex-direction: column;
+    width: 1600px; 
+    margin: 15px;
+    padding: 0px;
+    
+  }
+}
+
 .index .main-content .below-img div {
 	width: 30%;
 }
@@ -160,4 +233,16 @@ button {
 	display: block;
 	padding-top: 50px;
 	padding-bottom: 100px;
+}
+
+@media (max-width: 515px) {
+    .index footer {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 515px) {
+    .index footer small.copyright{
+    padding-bottom: 15px;
+  }
 }
