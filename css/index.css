@@ -270,22 +270,20 @@ button {
     .index .main-content .below-img {
     flex-direction: column;
     width: 1600px; 
-    margin: 15px;
-    padding: 0px;
+    margin: 0 auto;
+    padding: 10px;
     
   }
 }
 
-/* TABLET BELOW CONTENT MEDIAQ */
-@media (max-width: 800px) {
+@media (max-width: 815px) {
     .index .main-content .below-img {
-    /* flex-direction: column; */
-    max-width: 100%; 
-    margin: 15px;
-    padding: 0px;
-    
+    margin: 0 auto;
+    padding: 10px;
   }
 }
+
+/* TABLET BELOW CONTENT MEDIAQ */
 
 .index .main-content .below-img div {
 	width: 30%;
