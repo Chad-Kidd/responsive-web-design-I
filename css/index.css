@@ -87,19 +87,11 @@ button {
 	display: flex;
 	justify-content: space-around;
     align-items: center;
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
    
 }
 
 /* BANNER MEDIA-Q */
-@media(max-width: 515px) {
-    .index .banner {
-      flex-direction: column;
-      /* align-items: center; */
-      /* margin: 0 auto; */
-      padding-top: 10px;
-    }
-  }
 
   @media(max-width: 800px) {
     .banner {
@@ -107,6 +99,16 @@ button {
       flex-direction: column-reverse;
     }
   }
+
+  @media(max-width: 800px) {
+    .banner .logo {
+        display: flex;
+      flex-direction: column;
+      flex-direction: column-reverse;
+      margin: 5%;
+    }
+  }
+
 
 .index header .banner nav a {
 	text-decoration: none;
@@ -144,19 +146,12 @@ button {
     }
   }
 
-  @media(max-width: 515px) {
+  /* @media(max-width: 800px) {
     .index header .banner .logo {
        padding-top: 20px;
         
     }
-  }
-
-  @media(max-width: 800px) {
-    .index header .banner .logo {
-       padding-top: 20px;
-        
-    }
-  }
+  } */
 
 /* TABLET NAV AND LOGO */
   @media(min-width: 800px) {
