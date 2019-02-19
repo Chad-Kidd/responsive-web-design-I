@@ -87,6 +87,9 @@ button {
 	display: flex;
 	justify-content: space-around;
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
     /* flex-direction: column-reverse; */
    
 }
@@ -113,8 +116,14 @@ button {
 .index header .banner nav a {
 	text-decoration: none;
 	font-family: inherit;
-	color: lightgrey;
-    
+    color: lightgrey;
+    margin: 30px;
+}
+
+@media(max-width: 800px) { 
+.index header .banner nav a{
+    margin: 30px;
+}
 }
 
 /* BANNER NAV MEDIA-Q */
