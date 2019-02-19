@@ -87,6 +87,7 @@ button {
 	display: flex;
 	justify-content: space-around;
     align-items: center;
+    flex-direction: column-reverse;
    
 }
 
@@ -103,8 +104,7 @@ button {
   @media(max-width: 800px) {
     .banner {
       flex-direction: column;
-      /* align-items: center; */
-      /* margin: 0 auto; */
+      flex-direction: column-reverse;
     }
   }
 
@@ -123,6 +123,7 @@ button {
         justify-content: center;
         align-items: space-between;
         margin: 0 auto;
+        /* flex-direction: column; */
     }
   }
 
@@ -132,7 +133,6 @@ button {
     .index header .banner nav a {
         border: 0.2px solid rgb(133, 129, 129);
         width: 600px;
-
     }
   }
 
@@ -141,7 +141,6 @@ button {
         /* border: 0.2px solid rgb(133, 129, 129); */
         padding: 10px;
         width: 600px;
-    
     }
   }
 
@@ -227,6 +226,16 @@ button {
   }
 }
 
+@media (max-width: 515px) {
+    .index .main-content .above-img {
+    flex-direction: column;
+    width: 2000%; 
+    margin: 15px;
+    padding: 0px;
+    
+  }
+}
+
 /* TABLET ABOVE CONTENT */
 @media (max-width: 800px) {
     .index .main-content .above-img {
@@ -239,6 +248,15 @@ button {
 
 .index .main-content .above-img div {
 	width: 48%;
+}
+
+@media (max-width: 515px) {
+    .index .main-content .above-img div {
+    width: 100%; 
+    margin: 0 auto;
+    padding: 0px;
+    
+  }
 }
 
 .index .main-content .middle-img {
