@@ -122,7 +122,7 @@ button {
 
 @media(max-width: 800px) { 
 .index header .banner nav a{
-    margin: 30px;
+    margin: 0 auto;
 }
 }
 
@@ -132,9 +132,7 @@ button {
     .index header .banner nav a {
         display: flex;
         justify-content: center;
-        align-items: space-between;
         margin: 0 auto;
-        /* flex-direction: column; */
     }
   }
 
